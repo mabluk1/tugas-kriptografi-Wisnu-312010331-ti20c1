@@ -8,7 +8,6 @@ using namespace std;
 string encrypt(string plaintext, char key) {
   string ciphertext = "";
 
-  // enkripsi 
   for (int i = 0; i < plaintext.length(); i++) {
     ciphertext += plaintext[i] ^ key;
   }
@@ -19,7 +18,7 @@ string encrypt(string plaintext, char key) {
 string decrypt(string ciphertext, char key) {
   string plaintext = "";
 
-  // deskripsi 
+
   for (int i = 0; i < ciphertext.length(); i++) {
     plaintext += ciphertext[i] ^ key;
   }
@@ -27,11 +26,10 @@ string decrypt(string ciphertext, char key) {
   return plaintext;
 }
 
-int main() {
+  int main() {
   int choice;
   string text;
   char key;
-
   cout << "Menu:" << endl;
   cout << "1. Enkripsi" << endl;
   cout << "2. Dekripsi" << endl;
